@@ -45,7 +45,7 @@ const options = {
 }
 
 const Home: NextPage = () => {
-  const [countryinfo, setcountryinfo] = useState({})
+  const [countryinfo, setcountryinfo] = useState<any>({})
   const [casesdata, setcasesdata] = useState({})
   const [deathsdata, setdeathsdata] = useState({})
   const [recovereddata, setrecovereddata] = useState({})
@@ -188,7 +188,11 @@ const Home: NextPage = () => {
                       <dt className='order-1 mt-2 text-lg leading-6 font-medium text-gray-500'>
                         CoronaVirus Cases
                       </dt>
+
                       <dd className='order-2 text-5xl font-extrabold text-indigo-600'>
+                        {
+                          //@ts-ignore
+                        }
                         {countryinfo?.todayCases}
                       </dd>
                       <dt className='order-3 mt-2 text-lg leading-6 font-medium text-gray-500'>

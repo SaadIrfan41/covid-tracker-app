@@ -1,16 +1,45 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .map {
+  height: 500px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-top: 16px;
+  box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+} */
+.leaflet-container {
+  /* width: 100%; */
+  height: 500px;
+  border-radius: 12px;
+}
+.info-flag img {
+  width: 100px;
+  border-radius: 5px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* .info-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
 }
 
-* {
-  box-sizing: border-box;
+.info-container {
+  width: 150px;
+} */
+
+.info-flag {
+  height: 80px;
+  width: 100%;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.info-confirmed,
+.info-recovered,
+.info-deaths {
+  font-size: 16px;
+  margin-top: 5px;
 }
